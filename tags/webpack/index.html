@@ -6,19 +6,14 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://23forever.cn">
-  <title>Git教程学习（2）-常用命令 | 23forever的个人博客</title>
+  <title>Tag: webpack | 23forever的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="基础命令 git init 初始化当前目录为Git可以管理的版本库   touch .gitignore 新建.gitignore文件（.gitignore文件用于忽略文件的提交Github准备的各种配置文件） git rm &amp;lt;filename&amp;gt; 从版本库删除文件     git statu">
-<meta name="keywords" content="git,笔记">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Git教程学习（2）-常用命令">
-<meta property="og:url" content="http://23forever.cn/2017/12/05/git-commend/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="23forever的个人博客">
+<meta property="og:url" content="http://23forever.cn/tags/webpack/index.html">
 <meta property="og:site_name" content="23forever的个人博客">
-<meta property="og:description" content="基础命令 git init 初始化当前目录为Git可以管理的版本库   touch .gitignore 新建.gitignore文件（.gitignore文件用于忽略文件的提交Github准备的各种配置文件） git rm &amp;lt;filename&amp;gt; 从版本库删除文件     git status 查看版本库的当前状态 git diff 查看与上一次commit相比修改的内容，添加&amp;lt;">
-<meta property="og:updated_time" content="2017-12-06T17:45:03.318Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Git教程学习（2）-常用命令">
-<meta name="twitter:description" content="基础命令 git init 初始化当前目录为Git可以管理的版本库   touch .gitignore 新建.gitignore文件（.gitignore文件用于忽略文件的提交Github准备的各种配置文件） git rm &amp;lt;filename&amp;gt; 从版本库删除文件     git status 查看版本库的当前状态 git diff 查看与上一次commit相比修改的内容，添加&amp;lt;">
+<meta name="twitter:title" content="23forever的个人博客">
   
     <link rel="alternative" href="/atom.xml" title="23forever的个人博客" type="application/atom+xml">
   
@@ -150,110 +145,52 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-git-commend" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      Git教程学习（2）-常用命令
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2017/12/08/webpack-base/" class="archive-article-date">
+  	<time datetime="2017-12-08T07:47:03.135Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-08</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/12/08/webpack-base/">webpack教程学习（1）-基础</a>
     </h1>
   
 
-        
-        <a href="/2017/12/05/git-commend/" class="archive-article-date">
-  	<time datetime="2017-12-05T05:20:17.573Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="基础命令"><a href="#基础命令" class="headerlink" title="基础命令"></a>基础命令</h3><ul>
-<li><code>git init</code> 初始化当前目录为Git可以管理的版本库  </li>
-<li><code>touch .gitignore</code> 新建.gitignore文件（.gitignore文件用于忽略文件的提交<a href="https://github.com/github/gitignore" target="_blank" rel="noopener">Github准备的各种配置文件</a>）</li>
-<li><code>git rm &lt;filename&gt;</code> 从版本库删除文件    </li>
-<li><code>git status</code> 查看版本库的当前状态</li>
-<li><code>git diff</code> 查看与上一次commit相比修改的内容，添加<code>&lt;filename&gt;</code>可指定文件  </li>
-<li><code>git reflog</code> 显示整个本地仓储的命令, 包括所有branch的命令, 甚至包括已经撤销的commit, 只要HEAD发生了变化, 就会在reflog里面看得到  </li>
-<li><code>git reset –hard commit_id</code> 版本回退至指定commit，HEAD指向当前版本，HEAD^指向上一个版本<h3 id="按类型分类"><a href="#按类型分类" class="headerlink" title="按类型分类"></a>按类型分类</h3></li>
-<li><p><code>git add</code>  </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git add file_name <span class="comment">//  将某个文件添加到暂停区，多个文件时空格隔开</span></span><br><span class="line">$ git add -u <span class="comment">// 仅监控已经被add的文件（即tracked file），他会将被修改的文件提交到暂存区。add -u 不会提交新文件（untracked file）。（git add --update的缩写）</span></span><br><span class="line">$ git add . <span class="comment">// 监控工作区的状态树，使用它会把工作时的所有变化提交到暂存区，包括文件内容修改(modified)以及新文件(new)，但不包括被删除的文件。</span></span><br><span class="line">$ git add A <span class="comment">// 是上面两个功能的合集（git add --all的缩写）</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>git branch</code> 该指令用来操作分支</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git branch <span class="comment">// 查看本地所有分支，当前分支前面标有*号</span></span><br><span class="line">$ git branch -a <span class="comment">// 查看本地和远程的所有分支</span></span><br><span class="line">$ git branch branch_name <span class="comment">// 创建本地分支</span></span><br><span class="line">$ git branch -d branch_name <span class="comment">// 删除本地分支</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>git clone</code></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git clone 远程仓库地址 <span class="comment">// 克隆远程仓库</span></span><br><span class="line">$ git clone 远程仓库地址 目录名 <span class="comment">// 克隆远程仓库到指定目录</span></span><br><span class="line">$ git clone 远程仓库地址 -b 分支名或标签 <span class="comment">// 克隆远程仓库指定的分支或标签</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>git checkout</code>&nbsp;&nbsp;<code>git reset</code></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -- file_name <span class="comment">// 丢弃文件在工作区的修改</span></span><br><span class="line">$ git checkout branch_name <span class="comment">// 切换到指定分支</span></span><br><span class="line">$ git checkout -b branch_name <span class="comment">// 创建一个分支并切换到该分支</span></span><br><span class="line">$ git checkout -b local_branch origin/remote_branch <span class="comment">// 创建一个本地分支local_branch并拉取远程分支remote_branch的内容</span></span><br><span class="line">$ git reset HEAD file_name <span class="comment">// 可以把文件暂存区的修改撤销掉（unstage），重新放回工作区，结合$ git checkout -- filename两步使用，丢弃add所提交的修改</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>git config</code>  用户获取和设置版本库，<code>–global</code>针对当前用户起作用，如果不加，只对当前版本库起作用</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global <span class="string">"user.name"</span> <span class="comment">// 指定全局的用户名</span></span><br><span class="line">$ git config --global <span class="string">"email@example.com"</span> <span class="comment">// 指定全局的邮箱</span></span><br><span class="line">$ git config --global alias.your_name commend_name <span class="comment">// 自定义全局的命令，用your_name替换commend_name，相当于函数的变量赋值：let your_name=commend_name;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>git commit</code> </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m <span class="string">"message"</span> <span class="comment">// 将暂存区的所有内容添加至当前分支</span></span><br><span class="line">$ git commit -- amend <span class="comment">// 修改已提交的commit，如果push过就不行</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>git log</code>  查看当前分支的commit以及merge历史记录</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git log <span class="comment">// 详细版，有具体信息便于版本回退</span></span><br><span class="line">$ git log --oneline <span class="comment">//一行显示，只简单显示commit_id和描述</span></span><br><span class="line">$ git log --graph <span class="comment">// 以树状图的形式显示，能清晰的看到merge</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>git merge</code></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git merge branch_name <span class="comment">// 合并某分支到当前分支，Fast forward模式下查看log无法看到合并历史</span></span><br><span class="line">$ git merge --no-ff -m <span class="string">"描述"</span> branch_name<span class="comment">// 禁用Fast forward模式进行merge，同时生成一个新的commit，删除branch后能看到合并历史</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>git tag</code>  标签绑定在commit上</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ git tag <span class="comment">// 列出所有标签</span></span><br><span class="line">$ git show tag_name <span class="comment">// 查看标签信息</span></span><br><span class="line">$ git tag v0<span class="number">.1</span><span class="number">.0</span> <span class="comment">// 当前commit创建v0.1.0的标签</span></span><br><span class="line">$ git tag v0<span class="number">.1</span><span class="number">.0</span> commit_id <span class="comment">// 给指定commit创建v0.1.0的标签</span></span><br><span class="line">$ git tag -a v0<span class="number">.1</span><span class="number">.0</span> -m <span class="string">"说明"</span> <span class="comment">// -a指定标签名，-m指定说明文字</span></span><br><span class="line">$ git tag -a v0<span class="number">.1</span><span class="number">.0</span> -m <span class="string">"说明"</span> commit_id <span class="comment">// 给指定的commit打标签并添加说明</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>git push</code>  </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin master <span class="comment">// 将本地的master分支内容推送至origin主机，-u指定origin为默认主机</span></span><br><span class="line">$ git push origin master <span class="comment">// 将本地master内容推送至origin主机</span></span><br><span class="line">$ git push origin  --<span class="keyword">delete</span> remote_branch <span class="comment">// 删除远程版本库分支</span></span><br><span class="line">$ git push origin :remote_branch <span class="comment">// 推送一个空分支到远程版本库，相当于删除远程版本库的分支</span></span><br><span class="line">$ git push origin :tag_name <span class="comment">// 删除远程版本库的标签</span></span><br><span class="line">$ git push origin local_branch:remote_branch -u <span class="comment">// 本地创建的分支local_branch在第一次推送时关联远程remote_branch，两个分支名最好相同</span></span><br><span class="line">$ git push origin local_branch:remote_branch <span class="comment">// 本地创建了local_branch内容推送至远程remote_branch分支，如果远程不存在remote_branch分支则自动创建</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>git remote</code>  </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git remote <span class="comment">// 列出存在的远程版本库，只有版本库名字</span></span><br><span class="line">$ git remote -v <span class="comment">// 列出存在的远程版本库，包含版本库克隆地址（v指verbose 冗长的，繁琐的）</span></span><br><span class="line">$ git remote add origin git@server.com:user_name/repo_name.git <span class="comment">//本地版本库与server远程版本库关联，origin（起点，根源）是默认叫法，可改为其他字符串，适用于只关联一个远程版本库</span></span><br><span class="line">$ git remote add server git@server.com:user_name/repo_name.git <span class="comment">// 将server添加为远程版本库，适用于关联多个远程版本库，若之前已存在origin版本库，则不能再使用origin，应先移除：$ git rm origin</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="常用操作流程"><a href="#常用操作流程" class="headerlink" title="常用操作流程"></a>常用操作流程</h3><ul>
-<li><p>初始化</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Example-a</span></span><br><span class="line">$ git init</span><br><span class="line"><span class="comment">// 本地仓库只关联一个远程仓库时</span></span><br><span class="line">$ git remote add origin git@server.com user_name/repo_name.git</span><br><span class="line"><span class="comment">// 本地仓库关联多个远程仓库时，origin不可用</span></span><br><span class="line">$ git remote add server_1 git@server_1.com user_name/repo_name.git</span><br><span class="line">$ git remote add server_2 git@server_2.com user_name/repo.name.git</span><br><span class="line"></span><br><span class="line"><span class="comment">// Example-b</span></span><br><span class="line">$ git clone 远程仓库地址</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>添加至本地仓库当前分支的暂停区</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 添加单个文件的新增、修改</span></span><br><span class="line">$ git add file_name</span><br><span class="line"><span class="comment">// 添加所有文件的新增、修改</span></span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m <span class="string">"描述"</span> <span class="comment">// 将暂停区所有内容提交到当前分支</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>撤销修改  </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Example-a 文件在工作区被修改，还未add到暂停区</span></span><br><span class="line">$ git checkout -- file_name <span class="comment">// 回到上一次commit后保留在和本地仓库一样的状态或者回到上一次add后的保留在暂停区的状态</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Example-b 文件修改后，add到了暂停区</span></span><br><span class="line">$ git reset HEAD file_name <span class="comment">// 将暂停区的修改撤销(unstage)，重新放回工作区</span></span><br><span class="line">$ git checkout -- file_name <span class="comment">// 继续丢弃工作区的修改</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>版本回退&nbsp;&nbsp;<span style="color:red;">注意：reset可以指向历史记录的merge，revert不能指向merge</span></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 首先查看需要回退的commit_id或根据tag_name查找commit_id</span></span><br><span class="line">$ git log </span><br><span class="line"><span class="comment">// or</span></span><br><span class="line">$ git reflog</span><br><span class="line"><span class="comment">// or</span></span><br><span class="line">$ git tag</span><br><span class="line">$ git show tag_name</span><br><span class="line"><span class="comment">// 然后拿到需要回退的commit_id</span></span><br><span class="line">$ git reset --hard commit_id <span class="comment">// HEAD指针回退到指定的commit状态，历史记录中不出现放弃的提交记录</span></span><br><span class="line"><span class="comment">// or</span></span><br><span class="line">$ git revert commit_id <span class="comment">// 版本回退，放弃指定commit状态，生成一次新的提交，需要填写注释，以前的记录都在</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除文件</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ rm file_name <span class="comment">// 从当前分支的工作区将文件删除</span></span><br><span class="line">$ git rm file_name <span class="comment">// 从本地版本库的当前分支将文件删除</span></span><br><span class="line"><span class="comment">// 工作区的文件误删时</span></span><br><span class="line">$ git checkout -- file_name <span class="comment">// 用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="参考来源："><a href="#参考来源：" class="headerlink" title="参考来源："></a>参考来源：</h3><blockquote>- 廖雪峰老师的<a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="noopener">Git教程</a><br>- youzheJ的<a href="http://blog.youzhej.cn/2017/10/22/git%20%E5%91%BD%E4%BB%A4%E6%B1%87%E6%80%BB/" target="_blank" rel="noopener">git命令汇总</a></blockquote>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">webpack</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -266,129 +203,17 @@
 	</div>
 
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://23forever.cn/2017/12/05/git-commend/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2017/12/08/webpack-base/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          webpack教程学习（1）-基础
-        
-      </div>
-    </a>
   
   
-    <a href="/2017/12/04/git-install/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Git教程学习（1）-安装和创建版本库</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
-  <div id="gitment-ctn"></div> 
-<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
-<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  id: "http://23forever.cn/2017/12/05/git-commend/",
-  owner: '23forever',
-  repo: 'blog-23forever',
-  oauth: {
-    client_id: '43f7e3d04cc59281335e',
-    client_secret: '019964f474005aae528d504b0b74b9f971b3eed2',
-  },
-})
-gitment.render('gitment-ctn')
-</script>
-  
+    
 
 
           </div>
@@ -411,9 +236,9 @@ gitment.render('gitment-ctn')
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
