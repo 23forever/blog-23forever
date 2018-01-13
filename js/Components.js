@@ -2,7 +2,6 @@ function Components(parent, childArr){
     this.parent = document.querySelector(parent);
     this.childArr = childArr;
     this.init();
-    console.log('init');
     return this;
 }
 
@@ -15,7 +14,6 @@ Components.prototype.createEl = function(el){
     el.type&&(_el.type = el.type);
     el.innerText&&(_el.innerText = el.innerText);
     el = null;
-    console.log(_el);
     return _el
 }
 Components.prototype.buildChild = function(child){
@@ -51,7 +49,6 @@ Components.prototype.buildChild = function(child){
         className: 'title',
         innerText: child.title
     });
-    console.log(mask);
     mask.appendChild(detail);
     mask.appendChild(button);
     comLink.appendChild(mask);
