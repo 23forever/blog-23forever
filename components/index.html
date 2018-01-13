@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta data-n-head="true" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <title>组件</title>
+        <script src="./../js/rem.js"></script>
+        <link rel="icon" href="./../img/favicon.png">
+        <link rel="stylesheet" href="./../css/reset.css">
+        <link rel="stylesheet" href="./../css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../css/button.css">
+        <link rel="stylesheet" href="./../css/components.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collasped" data-toggle="collapse" data-target="#topMenu" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">组件</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="topMenu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#Loading">Loading</a></li>
+                            <li><a href="#Tree">TaskTree</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="main">
+            <div class="container">
+                <div class="component-loading component-child row shadow-container" id="Loading">
+                    <h3 class="text-info">loading</h3>
+                </div>
+                <div class="component-tree component-child row shadow-container" id="Tree">
+                    <h3 class="text-info">tree</h3>
+                </div>
+            </div>
+        </div>
+        <script src="./../js/jquery-3.2.1.min.js"></script>
+        <script src="./../js/bootstrap.min.js"></script>
+        <script src="./../js/Components.js"></script>
+        <script>
+            var loadingArr = [
+                {
+                    title: 'loading-1',
+                    link: './loading-1.html',
+                    detail: 'loading：用于进入页面时和等待请求的数据，可封装到jsonp或ajax。',
+                    img: './../img/loading01.png'
+                }
+            ];
+            var treeArr = [
+                {
+                    title: 'tree-task',
+                    link: './taskTree.html',
+                    detail: 'tree：从服务器获取任务进度，动态显示当前的任务完成情况',
+                    img: './../img/taskTree.png'
+                }
+            ]
+            var loadingComponent = new Components('#Loading', loadingArr);
+            var treeComponent = new Components('#Tree', treeArr);
+        </script>
+    </body>
+</html>

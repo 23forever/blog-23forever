@@ -1,0 +1,104 @@
+.main{
+    padding-top:55px;
+}
+.shadow-container{
+    box-shadow: 0 0 25px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.15);
+}
+.component-child{
+    margin: 20px auto;
+    padding-bottom: 30px;
+}
+.component-child h3{
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.child-wrapper{
+    position: relative;
+    margin: 0 auto;
+    border-radius: 4px;
+    overflow: hidden;
+}
+@media (max-width: 768px){
+    .child-wrapper{
+        width: 3rem;
+        height: 3.2rem;
+        font-size: 12px;
+    }
+    .child-wrapper img{
+        width: 3rem;
+        height: 2.6rem;
+    }
+    .child-wrapper .title{
+        height: .6rem;
+        line-height: .6rem;
+    }
+    .child-wrapper .btn{
+        font-size: 12px;
+    }
+}
+@media (min-width: 768px) { 
+    .child-wrapper{
+        width: 160px;
+        height: 172px;
+        font-size: 14px;
+    }
+    .child-wrapper img{
+        width: 160px;
+        height: 140px;
+    }
+    .child-wrapper .title{
+        height: 32px;
+        line-height: 32px;
+    }
+}
+@media (min-width: 1200px){
+    .child-wrapper{
+        width: 200px;
+        height: 214px;
+        font-size: 16px;
+    }
+    .child-wrapper img{
+        width: 200px;
+        height: 182px;
+    }
+    .child-wrapper .title{
+        height: 32px;
+        line-height: 32px;
+    }
+}
+.child-wrapper .mask{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    background-color: rgba(0, 0, 0, .6);
+    color: #fff;
+    opacity: 0;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+}
+.child-wrapper:hover .mask{
+    top: 0rem;
+    opacity: 1;
+}
+
+.child-wrapper .title{
+    background-color: rgb(230, 232, 233);
+    color: rgb(104, 100, 100);
+    padding: 0 10px;
+    text-align: center;
+}
+
+.child-wrapper .mask .detail{
+    line-height: 1.5;
+    margin: 12px 0;
+}
+.child-wrapper .mask .tips-btn{
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translate3d(-50%, 0 ,0);
+    text-align: center;
+}
