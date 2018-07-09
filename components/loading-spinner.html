@@ -7,7 +7,7 @@
         <link rel="icon" href="./../img/favicon.png">
         <link rel="stylesheet" href="./../css/reset.css">
         <link rel="stylesheet" href="./../css/button.css">
-        <link rel="stylesheet" href="./../css/Loading01.css">
+        <link rel="stylesheet" href="./../css/loading-spinner.css">
         <script src="./../js/rem.js"></script>
         <style type="text/css">
             html,body{
@@ -46,9 +46,9 @@
             <div class="margin-b"></div>
             <button type="button" class="btn btn-large btn-default" id="removeBtn">移除loading</button>
         </div>
-        <script src="./../js/Loading01.js"></script>
+        <script src="./../js/SpinnerLoading.js"></script>
         <script>
-            var loading = new Loading();
+            var loading = new SpinnerLoading();
             var root = document.querySelector('.root');
             setTimeout(function(){
                 root.style.display = 'block';
@@ -62,7 +62,7 @@
             var textCount = 0;
             document.getElementById('showBtn').onclick = function(){
                 if(newLoading) return;
-                newLoading = new Loading ();
+                newLoading = new SpinnerLoading ();
             }
             document.getElementById('changeBtn').onclick = function(){
                 newLoading&&newLoading.setText(textArr[textCount]);

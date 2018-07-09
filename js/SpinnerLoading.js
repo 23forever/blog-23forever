@@ -1,4 +1,4 @@
-function Loading(text){
+function SpinnerLoading(text){
     this.text = text || '加载中...';
     // 遮罩层
     this.mask = '';
@@ -14,9 +14,9 @@ function Loading(text){
     return this;
 }
 
-Loading.prototype.build = function(){
+SpinnerLoading.prototype.build = function(){
     this.mask = document.createElement('div');
-    this.mask.className = 'loading-mask';
+    this.mask.className = 'loading-spinner-mask';
     this.container = document.createElement('div');
     this.container.className = 'loading-container';
     this.animateCon = document.createElement('div');
@@ -38,7 +38,7 @@ Loading.prototype.build = function(){
     document.body.appendChild(this.mask);
 }
 // loading初始化
-Loading.prototype.init = function(){
+SpinnerLoading.prototype.init = function(){
     // 生成loading
     this.build();
     var self = this;
@@ -47,7 +47,7 @@ Loading.prototype.init = function(){
     },50);
 }
 // loding淡出
-Loading.prototype.hidden = function(){
+SpinnerLoading.prototype.hidden = function(){
     this.mask.classList.add('hidden');
     var self = this;
     setTimeout(function(){
@@ -56,6 +56,6 @@ Loading.prototype.hidden = function(){
 }
 
 // loading设置text
-Loading.prototype.setText = function(text){
+SpinnerLoading.prototype.setText = function(text){
     this.textCon.innerText = text;
 }

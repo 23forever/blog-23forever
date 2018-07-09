@@ -7,8 +7,8 @@
         <link rel="icon" href="./../img/favicon.png">
         <link rel="stylesheet" href="./../css/reset.css">
         <link rel="stylesheet" href="./../css/button.css">
-        <link rel="stylesheet" href="./../css/Loading01.css">
-        <link rel="stylesheet" href="./../css/TaskTree.css">
+        <link rel="stylesheet" href="./../css/loading-spinner.css">
+        <link rel="stylesheet" href="./../css/tree-task.css">
         <script src="./../js/rem.js"></script>
         <style type="text/css">
             html,body{
@@ -31,10 +31,10 @@
             <div class="margin-b"></div>
             <button type="button" class="btn btn-large btn-default" id="changeBtn">点亮taskTree</button>
         </div>
-        <script src="./../js/Loading01.js"></script>
+        <script src="./../js/SpinnerLoading.js"></script>
         <script src="./../js/TaskTree.js"></script>
         <script>
-            var loading = new Loading();
+            var loading = new SpinnerLoading();
             setTimeout(function(){
                 loading.hidden();
             },100);

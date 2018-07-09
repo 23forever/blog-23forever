@@ -22,9 +22,8 @@ Components.prototype.buildChild = function(child){
         className: 'col-xs-6 col-sm-3 col-md-3'
     });
     var comLink = this.createEl({
-        tagName: 'a',
-        className: 'child-wrapper',
-        href: child.link
+        tagName: 'div',
+        className: 'child-wrapper'
     });
     var mask = this.createEl({
         tagName: 'div',
@@ -36,9 +35,10 @@ Components.prototype.buildChild = function(child){
         className: 'detail'
     });
     var button = this.createEl({
-        tagName: 'button',
+        tagName: 'a',
         innerText: '体验一番',
-        className: 'btn btn-default tips-btn'
+        className: 'btn btn-default tips-btn',
+        href: child.link
     });
     var img = this.createEl({
         tagName: 'img',

@@ -508,13 +508,14 @@ TaskTree.prototype.slideIn = function(){
 }
 // 淡出
 TaskTree.prototype.slideOut = function(){
-    this.modal.className = 'tree-modal slide-out';
+    this.modal.className = this.modal.classList.value.replace(/slide\-in/, 'slide-out');
+    console.log(this.modal.className)
     var self = this;
     setTimeout(function(){
         self.mask.className = 'tree-mask';
     }, 100);
     setTimeout(function(){
-        self.modal.className = 'tree-modal';
+        self.modal.className = self.modal.classList.value.replace(/slide\-out/, '');
         self.mask.style.display = 'none';
     }, 300);
 }
