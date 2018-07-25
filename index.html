@@ -153,6 +153,116 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-nodeJs-study-basic" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/20/nodeJs-study-basic/">Node.js学习(1)-基础知识</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/20/nodeJs-study-basic/" class="archive-article-date">
+  	<time datetime="2018-07-20T08:43:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-20</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Node.js是什么？官网给出的解释是：<br>Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。Node.js 的包管理器 npm，是全球最大的开源库生态系统。</p>
+<h2 id="Node-js中的模块"><a href="#Node-js中的模块" class="headerlink" title="Node.js中的模块"></a>Node.js中的模块</h2><ul>
+<li><code>assert</code>- 断言，assert模块提供了断言测试的函数，用于测试不变式  </li>
+<li><code>Buffer</code>- 缓存，Buffer类在Node.js中是一个全局变量，用于实现二进制数据的存储和转换  </li>
+<li><code>child_process</code>- 子进程，提供衍生子进程的功能  </li>
+<li><code>cluster</code>- 集群，用于实现多进程  </li>
+<li><code>console</code>- 控制台，简单的调试控制台，类似于Web浏览器提供的JavaScript控制台  </li>
+<li><code>crypto</code>- 加密，提供加密功能，包含对 OpenSSL 的哈希、HMAC、加密、解密、签名、以及验证功能的一整套封装  </li>
+<li><code>dgram</code>- 数据报，提供UDP数据包scoket的实现  </li>
+<li><code>dns</code>- 域名服务器，用于实现与dns相关的处理  </li>
+<li><code>Error</code>- 错误，提供Node.js引起的javaScript错误和系统错误  </li>
+<li><code>events</code>- 事件，用于为事件处理提供一个基础类  </li>
+<li><code>fs</code>- 文件系统，用于操作文件和文件系统  </li>
+<li><code>http</code>- HTTP，用于实现HTTP服务器端及客户端  </li>
+<li><code>https</code>- HTTPS，用于实现HTTPS服务器端及客户端  </li>
+<li><code>net</code>- 网络，用于创建TCP服务器与客户端  </li>
+<li><code>os</code>- 操作系统，提供了一些操作系统相关的实用方法  </li>
+<li><code>path</code>- 路径，提供了一些用于处理文件和目录路径的工具函数  </li>
+<li><code>querystring</code>- 查询字符串，用于处理HTTP请求中使用的查询字符串  </li>
+<li><code>readline</code>- 逐行读取，用于读取一行标准输入流  </li>
+<li><code>repl</code>- 交互式解释器，用于实现REPL（Read-Eval-Print-Loop）交互式运行环境  </li>
+<li><code>stream</code>- 流，用于构建实现了流接口的对象  </li>
+<li><code>string_decoder</code>- 字符串解码器，用于从二进制数据到字符串数据之间的转换  </li>
+</ul>
+        
+          <a class="article-more-a" href="/2018/07/20/nodeJs-study-basic/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">nodeJs</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记//" class="article-tag-list-link color3">笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-2018-midyearWorkFeelings" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -251,22 +361,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="跨域原理"><a href="#跨域原理" class="headerlink" title="跨域原理"></a>跨域原理</h3><p>ajax使用XMLHTTPRequest对象发送跨域请求时，会遇到同源策略，被浏览器所拦截，但我们会发现诸如script、img、link标签请求资源时不会受到跨域影响。例如：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"http://www.a.com/scripts/1.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"http://www.b.com/images/1.jpg"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"http://www.c.com/assets/css/1.css"</span> /&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>首先，我们要理解跨域：跨域是指在脚本代码中向非同源域发送HTTP请求。这只是跨站资源请求，而我们恰好可以使用这种方式来实现跨域HTTP请求。看如下代码：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>jsonp demo<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- script-1 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">            <span class="function"><span class="keyword">function</span> <span class="title">handle</span>(<span class="params">data</span>)</span>&#123;</span></span><br><span class="line"><span class="undefined">                alert(data);</span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined">        </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- script-2 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">            handle(<span class="string">'hello World'</span>);</span></span><br><span class="line"><span class="undefined">        </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>上面的代码中，script-1定义了一个方法<code>handle</code>，script-2调用了这个方法，加载到第二个方法时会alert弹框显示<code>hello World</code>。事实上，jsonp正是使用了这种方式来实现跨域资源的请求。下面是jsonp实现的代码：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> jsonp = <span class="function"><span class="keyword">function</span>(<span class="params">url,config</span>)</span>&#123;  </span><br><span class="line">    <span class="keyword">var</span> data = config.data || [];  </span><br><span class="line">    <span class="keyword">var</span> paraArr=[],paraString=<span class="string">''</span>;<span class="comment">//get请求的参数。  </span></span><br><span class="line">    <span class="keyword">var</span> urlArr;  </span><br><span class="line">    <span class="keyword">var</span> callbackName;<span class="comment">//回调函数名字。  </span></span><br><span class="line">    <span class="keyword">var</span> script,head;<span class="comment">//要生成script标签。head标签。  </span></span><br><span class="line">    <span class="keyword">var</span> supportLoad;<span class="comment">//是否支持 onload。是针对IE的兼容处理。  </span></span><br><span class="line">    <span class="keyword">var</span> onEvent;<span class="comment">//onload或onreadystatechange事件。  </span></span><br><span class="line">    <span class="keyword">var</span> timeout = config.timeout || <span class="number">50000</span>;<span class="comment">//超时功能。</span></span><br><span class="line">    <span class="keyword">var</span> isLoading = config.isLoading===<span class="literal">false</span>?<span class="literal">false</span>:<span class="literal">true</span>; <span class="comment">//默认给jsonp添加loading</span></span><br><span class="line">    <span class="keyword">var</span> loading; <span class="comment">//声明变量接收loading对象</span></span><br><span class="line">    <span class="keyword">if</span>(isLoading)&#123;</span><br><span class="line">        loading = <span class="keyword">new</span> Loading(config.loadingText);</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="comment">// 添加token和sessionId，验证身份</span></span><br><span class="line">	<span class="keyword">var</span> nowTime = <span class="keyword">new</span> <span class="built_in">Date</span>().getTime();</span><br><span class="line">	data.access_token = <span class="string">'2d82ab76-c505-4ecb-b896-a267c3c4'</span>;</span><br><span class="line">	data.sessionId = <span class="string">'9406D70B2EC161FEC18656094491'</span>;</span><br><span class="line">	<span class="comment">// 是否自定义了callbackName</span></span><br><span class="line">	<span class="keyword">if</span>(config.callbackName)&#123;</span><br><span class="line">		<span class="comment">// 使用自定义callbackName</span></span><br><span class="line">		callbackName = config.callbackName;</span><br><span class="line">	&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">		<span class="comment">// 使用默认callbackName</span></span><br><span class="line">		callbackName = <span class="string">'jsonpCallback'</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	data[callbackName] = callbackName;</span><br><span class="line">	data._ = nowTime;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i <span class="keyword">in</span> data)&#123;  </span><br><span class="line">        <span class="keyword">if</span>(data.hasOwnProperty(i))&#123;  </span><br><span class="line">            <span class="comment">// 将data参数进行url编码传参</span></span><br><span class="line">            paraArr.push(<span class="built_in">encodeURIComponent</span>(i) + <span class="string">"="</span> +<span class="built_in">encodeURIComponent</span>(data[i]));  </span><br><span class="line">        &#125;  </span><br><span class="line">	&#125;</span><br><span class="line">    urlArr = url.split(<span class="string">"?"</span>);<span class="comment">//链接中原有的参数。  </span></span><br><span class="line">    <span class="keyword">if</span>(urlArr.length&gt;<span class="number">1</span>)&#123;  </span><br><span class="line">        paraArr.push(urlArr[<span class="number">1</span>]);  </span><br><span class="line">    &#125;</span><br><span class="line">    paraArr.push(<span class="string">'callbackFunctionName='</span>+callbackName);  </span><br><span class="line">    paraString = paraArr.join(<span class="string">"&amp;"</span>);  </span><br><span class="line">    url = urlArr[<span class="number">0</span>] + <span class="string">"?"</span>+ paraString;  </span><br><span class="line">    <span class="comment">// 创建script节点</span></span><br><span class="line">    script = <span class="built_in">document</span>.createElement(<span class="string">"script"</span>);  </span><br><span class="line">    script.loaded = <span class="literal">false</span>;<span class="comment">//为了实现IE下的onerror做的处理。JSONP的回调函数总是在script的onload事件（IE为onreadystatechange）之前就被调用了。因此我们在正向回调执行之时，为script标签添加一个属性，然后待到onload发生时，再检测有没有这个属性就可以判定是否请求成功，没有成功当然就调用我们的error。  </span></span><br><span class="line">  </span><br><span class="line">    <span class="comment">//将回调函数添加到全局。  </span></span><br><span class="line">    <span class="built_in">window</span>[callbackName] = <span class="function"><span class="keyword">function</span>(<span class="params">arg</span>)</span>&#123;  </span><br><span class="line">        <span class="keyword">var</span> success = config.success; </span><br><span class="line">        <span class="comment">// 函数内部执行成功的回调 </span></span><br><span class="line">        <span class="comment">// 移除loading </span></span><br><span class="line">        loading.hidden();</span><br><span class="line">        success(arg);  </span><br><span class="line">        script.loaded = <span class="literal">true</span>;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    head = <span class="built_in">document</span>.getElementsByTagName(<span class="string">"head"</span>)[<span class="number">0</span>]; </span><br><span class="line">    <span class="comment">//   插入script节点</span></span><br><span class="line">    head.insertBefore(script, head.firstChild) <span class="comment">//chrome下第二个参数不能为null  </span></span><br><span class="line">    script.src = url;  </span><br><span class="line">    <span class="comment">// script是否有onload事件</span></span><br><span class="line">    supportLoad = <span class="string">"onload"</span> <span class="keyword">in</span> script;  </span><br><span class="line">    onEvent = supportLoad ? <span class="string">"onload"</span> : <span class="string">"onreadystatechange"</span>;  </span><br><span class="line">    <span class="comment">// 执行script加载完成的回调</span></span><br><span class="line">    script[onEvent] = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line">        <span class="keyword">if</span>(script.readyState &amp;&amp; script.readyState !=<span class="string">"loaded"</span>)&#123;  </span><br><span class="line">            <span class="keyword">return</span>;  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="comment">// 响应成功但未执行成功的回调，执行错误的回调</span></span><br><span class="line">        <span class="keyword">if</span>(script.readyState == <span class="string">'loaded'</span> &amp;&amp; script.loaded == <span class="literal">false</span>)&#123;  </span><br><span class="line">            script.onerror();  </span><br><span class="line">            <span class="keyword">return</span>;  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="comment">//删除节点。  </span></span><br><span class="line">        (script.parentNode &amp;&amp; script.parentNode.removeChild(script))&amp;&amp; (head.removeNode &amp;&amp; head.removeNode(<span class="keyword">this</span>));    </span><br><span class="line">        script = script[onEvent] = script.onerror = <span class="built_in">window</span>[callbackName] = <span class="literal">null</span>;  </span><br><span class="line">  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    script.onerror = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;  </span><br><span class="line">        loading.hidden();</span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">window</span>[callbackName] == <span class="literal">null</span>)&#123; </span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">"请求超时，请重试！"</span>); </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="comment">// 若存在错误的回调，执行</span></span><br><span class="line">        config.error &amp;&amp; config.error();<span class="comment">//如果有专门的error方法的话，就调用。  </span></span><br><span class="line">        (script.parentNode &amp;&amp; script.parentNode.removeChild(script))&amp;&amp; (head.removeNode &amp;&amp; head.removeNode(<span class="keyword">this</span>));    </span><br><span class="line">        script = script[onEvent] = script.onerror = <span class="built_in">window</span>[callbackName] = <span class="literal">null</span>;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="comment">// 若超过指点时间未执行成功的回调，提示超时</span></span><br><span class="line">    <span class="keyword">if</span>(timeout!= <span class="number">0</span>)&#123;  </span><br><span class="line">        setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;  </span><br><span class="line">            <span class="keyword">if</span>(script &amp;&amp; script.loaded == <span class="literal">false</span>)&#123;  </span><br><span class="line">                <span class="built_in">window</span>[callbackName] = <span class="literal">null</span>;<span class="comment">//超时，且未加载结束，注销函数  </span></span><br><span class="line">                <span class="keyword">if</span>(mui)(mui.toast(<span class="string">"请求超时，请检查网络！"</span>));</span><br><span class="line">                script.onerror();                 </span><br><span class="line">            &#125;  </span><br><span class="line">        &#125;, timeout);  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h3 id="实现代码分析"><a href="#实现代码分析" class="headerlink" title="实现代码分析"></a>实现代码分析</h3><p>分析jsonp的实现步骤如下：  </p>
-<ul>
-<li>将请求的所需的数据编码，添加至请求资源的参数里，自定义或使用固定的回调函数名  </li>
-<li>声明全局的回调函数<code>callbackName</code>，接收服务器成功响应时给予的参数  </li>
-<li>创建<code>script</code>节点，将它的<code>src</code>设置为服务器地址连接提交的参数，在<code>DOM</code>中动态插入<code>script</code>节点，请求资源  </li>
-<li>服务器接收参数并截取进行数据操作，可能发生多种情况：  <ol>
-<li>(a)加载完成，并返回自定义的回调函数<code>callbackName(arg)</code>的调用，并将数据作为参数<code>arg</code>返回，<code>callbackName</code>方法内部执行成功的回调方法<code>success(arg)</code>;  </li>
-<li>(b)加载完成，但未返回自定义的回调函数<code>callbackName(arg)</code>的调用，触发<code>onerror()</code>的调用，若声明了<code>error</code>方法，执行；  </li>
-<li>(c)加载失败，自动触发和手动触发<code>onerror()</code>方法（IE浏览器与Chrome浏览器有所不同）；  </li>
-<li>(d)超时未响应，给予提示，手动触发<code>onerror()</code>方法。</li>
-</ol>
-</li>
-</ul>
-<h3 id="参考来源："><a href="#参考来源：" class="headerlink" title="参考来源："></a>参考来源：</h3><blockquote>- liusaint1992 <a href="http://blog.csdn.net/liusaint1992/article/details/50959571" target="_blank" rel="noopener">自己封装的JSONP跨域函数</a><br>- choon <a href="https://www.cnblogs.com/choon/p/5393682.html" target="_blank" rel="noopener">跨域解决方案二：使用JSONP实现跨域</a><br>- Franky <a href="https://www.cnblogs.com/_franky/archive/2010/06/20/1761370.html" target="_blank" rel="noopener">又说 动态加载 script. ie 下 script Element 的 readyState状态</a></blockquote>
+<p>首先，我们要理解跨域：跨域是指在脚本代码中向非同源域发送HTTP请求。这只是跨站资源请求，而我们恰好可以使用这种方式来实现跨域HTTP请求。看如下代码：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>jsonp demo<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- script-1 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">            function handle(data)&#123;</span></span><br><span class="line"><span class="undefined">                alert(data);</span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined">        </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- script-2 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">            handle('hello World');</span></span><br><span class="line"><span class="undefined">        </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+        
+          <a class="article-more-a" href="/2018/01/13/jsonp/#more">more >></a>
+        
       
 
       
@@ -279,15 +377,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">jsonp</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">跨域</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
         		</li>
       		
 		</ul>
@@ -366,21 +464,10 @@
 </ul>
 <hr>
 <h3 id="entry"><a href="#entry" class="headerlink" title="entry"></a><code>entry</code></h3><p>entry指示webpack改用那些模块来作为构建其内部<strong>依赖图</strong>的开始，进入入口起点后，webpack 会找出有哪些模块和库是入口起点（直接和间接）依赖的。每个依赖项随即被处理，最后输出到称之为 bundles 的文件中。<br>看一个entry配置的简单例子：<br>webpack.config.js<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line"><span class="comment">// 单个入口文件      </span></span><br><span class="line">  entry: <span class="string">'./src/index.js'</span></span><br><span class="line"><span class="comment">// 多个入口文件</span></span><br><span class="line">  entry: &#123;</span><br><span class="line">    app: <span class="string">'./src/app.js'</span>,</span><br><span class="line">    common: <span class="string">'./src/common.js'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><a href="https://doc.webpack-china.org/concepts/entry-points" target="_blank" rel="noopener">查看entry详细配置</a><br><br></p>
-<h3 id="output"><a href="#output" class="headerlink" title="output"></a><code>output</code></h3><p>output 属性告诉 webpack 在哪里输出它所创建的 bundles，以及如何命名这些文件。你可以通过在配置中指定一个 output 字段，来配置这些处理过程：<br>webpack.config.js<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">'path'</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  entry: <span class="string">'./src/index.js'</span>,</span><br><span class="line">  output: &#123;</span><br><span class="line">    filename: <span class="string">'app.bundle.js'</span>,</span><br><span class="line">    path: path.resolve(__dirname, <span class="string">'dist'</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// or</span></span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  entry: &#123;</span><br><span class="line">    app: <span class="string">'./src/index.js'</span>,</span><br><span class="line">    common: <span class="string">'./src/common.js'</span></span><br><span class="line">  &#125;,</span><br><span class="line">  output: &#123;</span><br><span class="line">    filename: <span class="string">'[name].bundle.js'</span>,</span><br><span class="line">    path: path.resolve(__dirname, <span class="string">'dist'</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><a href="https://doc.webpack-china.org/configuration/output" target="_blank" rel="noopener">查看output详细配置</a><br><br></p>
-<h3 id="loader"><a href="#loader" class="headerlink" title="loader"></a><code>loader</code></h3><p>loader 让 webpack 能够去处理那些非 JavaScript 文件（webpack 自身只理解 JavaScript）。loader 可以将所有类型的文件转换为 webpack 能够处理的有效模块，然后你就可以利用 webpack 的打包能力，对它们进行处理。<br>本质上，webpack loader 将所有类型的文件，转换为应用程序的依赖图可以直接引用的模块。<br>在更高层面，在 webpack 的配置中 loader 有两个目标：  </p>
-<ol>
-<li>识别出应该被对应的 loader 进行转换的那些文件。(使用 test 属性)</li>
-<li>转换这些文件，从而使其能够被添加到依赖图中（并且最终添加到 bundle 中）(use 属性)</li>
-</ol>
-<hr>
-<p>webpack.config.js<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">'path'</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  entry: <span class="string">'./src/index.js'</span>,</span><br><span class="line">  output: &#123;</span><br><span class="line">    path: path.resolve(__dirname, <span class="string">'dist'</span>),</span><br><span class="line">    filename: <span class="string">'app.bundle.js'</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="built_in">module</span>: &#123;</span><br><span class="line">    rules: [</span><br><span class="line">      &#123;</span><br><span class="line">        test: <span class="regexp">/\.css$/</span>,</span><br><span class="line">        use: [</span><br><span class="line">          <span class="string">'css-loader'</span>,</span><br><span class="line">          <span class="string">'style-loader'</span></span><br><span class="line">        ]</span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><a href="https://doc.webpack-china.org/concepts/loaders" target="_blank" rel="noopener">查看loader详细配置</a><br><br></p>
-<h3 id="plugins"><a href="#plugins" class="headerlink" title="plugins"></a><code>plugins</code></h3><p>loader 被用于转换某些类型的模块，而插件则可以用于执行范围更广的任务。插件的范围包括，从打包优化和压缩，一直到重新定义环境中的变量。插件接口功能极其强大，可以用来处理各种各样的任务。<br>想要使用一个插件，你只需要 <code>require()</code> 它，然后把它添加到 plugins 数组中。多数插件可以通过选项(option)自定义。你也可以在一个配置文件中因为不同目的而多次使用同一个插件，这时需要通过使用 <code>new</code> 操作符来创建它的一个实例。<br>webpack.config.js<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">'path'</span>);</span><br><span class="line"><span class="keyword">const</span> CleanWebpackPlugin = <span class="built_in">require</span>(<span class="string">'clean-webpack-plugin'</span>);</span><br><span class="line"><span class="keyword">const</span> HtmlWebpackPlugin = <span class="built_in">require</span>(<span class="string">'html-webpack-plugin'</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  entry: <span class="string">'./src/index.js'</span>,</span><br><span class="line">  output: &#123;</span><br><span class="line">    path: path.resolve(__dirname, <span class="string">'dist'</span>),</span><br><span class="line">    filename: <span class="string">'app.bundle.js'</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="built_in">module</span>: &#123;</span><br><span class="line">    rules: [</span><br><span class="line">      &#123;</span><br><span class="line">        test: <span class="regexp">/\.css$/</span>,</span><br><span class="line">        use: [<span class="string">'css-loader'</span>, <span class="string">'style-loader'</span>]</span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">  plugins:[</span><br><span class="line">    <span class="keyword">new</span> CleanWebpackPlugin(<span class="string">'dist'</span>),</span><br><span class="line">    <span class="keyword">new</span> HtmlWebpackPlugin(&#123;</span><br><span class="line">      title: <span class="string">'webpack-study'</span></span><br><span class="line">    &#125;)</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><a href="https://doc.webpack-china.org/concepts/plugins" target="_blank" rel="noopener">查看plugins详细配置</a>  </p>
-<p></p><h4>参考文献：</h4><p></p>
-<blockquote><a href="https://doc.webpack-china.org/concepts" target="_blank" rel="noopener">webpack中文网-概念</a></blockquote>
+<p><a href="https://doc.webpack-china.org/concepts/entry-points" target="_blank" rel="noopener">查看entry详细配置</a><br>
+        
+          <a class="article-more-a" href="/2017/12/08/webpack-base/#more">more >></a>
+        
       
 
       
@@ -472,59 +559,12 @@
 <li><code>git diff</code> 查看与上一次commit相比修改的内容，添加<code>&lt;filename&gt;</code>可指定文件  </li>
 <li><code>git reflog</code> 显示整个本地仓储的命令, 包括所有branch的命令, 甚至包括已经撤销的commit, 只要HEAD发生了变化, 就会在reflog里面看得到  </li>
 <li><code>git reset –hard commit_id</code> 版本回退至指定commit，HEAD指向当前版本，HEAD^指向上一个版本<h3 id="按类型分类"><a href="#按类型分类" class="headerlink" title="按类型分类"></a>按类型分类</h3></li>
-<li><p><code>git add</code>  </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git add file_name <span class="comment">//  将某个文件添加到暂停区，多个文件时空格隔开</span></span><br><span class="line">$ git add -u <span class="comment">// 仅监控已经被add的文件（即tracked file），他会将被修改的文件提交到暂存区。add -u 不会提交新文件（untracked file）。（git add --update的缩写）</span></span><br><span class="line">$ git add . <span class="comment">// 监控工作区的状态树，使用它会把工作时的所有变化提交到暂存区，包括文件内容修改(modified)以及新文件(new)，但不包括被删除的文件。</span></span><br><span class="line">$ git add A <span class="comment">// 是上面两个功能的合集（git add --all的缩写）</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>git branch</code> 该指令用来操作分支</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git branch <span class="comment">// 查看本地所有分支，当前分支前面标有*号</span></span><br><span class="line">$ git branch -a <span class="comment">// 查看本地和远程的所有分支</span></span><br><span class="line">$ git branch branch_name <span class="comment">// 创建本地分支</span></span><br><span class="line">$ git branch -d branch_name <span class="comment">// 删除本地分支</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>git clone</code></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git clone 远程仓库地址 <span class="comment">// 克隆远程仓库</span></span><br><span class="line">$ git clone 远程仓库地址 目录名 <span class="comment">// 克隆远程仓库到指定目录</span></span><br><span class="line">$ git clone 远程仓库地址 -b 分支名或标签 <span class="comment">// 克隆远程仓库指定的分支或标签</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>git checkout</code>&nbsp;&nbsp;<code>git reset</code></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -- file_name <span class="comment">// 丢弃文件在工作区的修改</span></span><br><span class="line">$ git checkout branch_name <span class="comment">// 切换到指定分支</span></span><br><span class="line">$ git checkout -b branch_name <span class="comment">// 创建一个分支并切换到该分支</span></span><br><span class="line">$ git checkout -b local_branch origin/remote_branch <span class="comment">// 创建一个本地分支local_branch并拉取远程分支remote_branch的内容</span></span><br><span class="line">$ git reset HEAD file_name <span class="comment">// 可以把文件暂存区的修改撤销掉（unstage），重新放回工作区，结合$ git checkout -- filename两步使用，丢弃add所提交的修改</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>git config</code>  用户获取和设置版本库，<code>–global</code>针对当前用户起作用，如果不加，只对当前版本库起作用</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global <span class="string">"user.name"</span> <span class="comment">// 指定全局的用户名</span></span><br><span class="line">$ git config --global <span class="string">"email@example.com"</span> <span class="comment">// 指定全局的邮箱</span></span><br><span class="line">$ git config --global alias.your_name commend_name <span class="comment">// 自定义全局的命令，用your_name替换commend_name，相当于函数的变量赋值：let your_name=commend_name;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>git commit</code> </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m <span class="string">"message"</span> <span class="comment">// 将暂存区的所有内容添加至当前分支</span></span><br><span class="line">$ git commit -- amend <span class="comment">// 修改已提交的commit，如果push过就不行</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>git log</code>  查看当前分支的commit以及merge历史记录</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git log <span class="comment">// 详细版，有具体信息便于版本回退</span></span><br><span class="line">$ git log --oneline <span class="comment">//一行显示，只简单显示commit_id和描述</span></span><br><span class="line">$ git log --graph <span class="comment">// 以树状图的形式显示，能清晰的看到merge</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>git merge</code></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git merge branch_name <span class="comment">// 合并某分支到当前分支，Fast forward模式下查看log无法看到合并历史</span></span><br><span class="line">$ git merge --no-ff -m <span class="string">"描述"</span> branch_name<span class="comment">// 禁用Fast forward模式进行merge，同时生成一个新的commit，删除branch后能看到合并历史</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>git tag</code>  标签绑定在commit上</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ git tag <span class="comment">// 列出所有标签</span></span><br><span class="line">$ git show tag_name <span class="comment">// 查看标签信息</span></span><br><span class="line">$ git tag v0<span class="number">.1</span><span class="number">.0</span> <span class="comment">// 当前commit创建v0.1.0的标签</span></span><br><span class="line">$ git tag v0<span class="number">.1</span><span class="number">.0</span> commit_id <span class="comment">// 给指定commit创建v0.1.0的标签</span></span><br><span class="line">$ git tag -a v0<span class="number">.1</span><span class="number">.0</span> -m <span class="string">"说明"</span> <span class="comment">// -a指定标签名，-m指定说明文字</span></span><br><span class="line">$ git tag -a v0<span class="number">.1</span><span class="number">.0</span> -m <span class="string">"说明"</span> commit_id <span class="comment">// 给指定的commit打标签并添加说明</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>git push</code>  </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin master <span class="comment">// 将本地的master分支内容推送至origin主机，-u指定origin为默认主机</span></span><br><span class="line">$ git push origin master <span class="comment">// 将本地master内容推送至origin主机</span></span><br><span class="line">$ git push origin  --<span class="keyword">delete</span> remote_branch <span class="comment">// 删除远程版本库分支</span></span><br><span class="line">$ git push origin :remote_branch <span class="comment">// 推送一个空分支到远程版本库，相当于删除远程版本库的分支</span></span><br><span class="line">$ git push origin :tag_name <span class="comment">// 删除远程版本库的标签</span></span><br><span class="line">$ git push origin local_branch:remote_branch -u <span class="comment">// 本地创建的分支local_branch在第一次推送时关联远程remote_branch，两个分支名最好相同</span></span><br><span class="line">$ git push origin local_branch:remote_branch <span class="comment">// 本地创建了local_branch内容推送至远程remote_branch分支，如果远程不存在remote_branch分支则自动创建</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>git remote</code>  </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git remote <span class="comment">// 列出存在的远程版本库，只有版本库名字</span></span><br><span class="line">$ git remote -v <span class="comment">// 列出存在的远程版本库，包含版本库克隆地址（v指verbose 冗长的，繁琐的）</span></span><br><span class="line">$ git remote add origin git@server.com:user_name/repo_name.git <span class="comment">//本地版本库与server远程版本库关联，origin（起点，根源）是默认叫法，可改为其他字符串，适用于只关联一个远程版本库</span></span><br><span class="line">$ git remote add server git@server.com:user_name/repo_name.git <span class="comment">// 将server添加为远程版本库，适用于关联多个远程版本库，若之前已存在origin版本库，则不能再使用origin，应先移除：$ git rm origin</span></span><br></pre></td></tr></table></figure>
+<li><code>git add</code>  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git add file_name <span class="comment">//  将某个文件添加到暂停区，多个文件时空格隔开</span></span><br><span class="line">$ git add -u <span class="comment">// 仅监控已经被add的文件（即tracked file），他会将被修改的文件提交到暂存区。add -u 不会提交新文件（untracked file）。（git add --update的缩写）</span></span><br><span class="line">$ git add . <span class="comment">// 监控工作区的状态树，使用它会把工作时的所有变化提交到暂存区，包括文件内容修改(modified)以及新文件(new)，但不包括被删除的文件。</span></span><br><span class="line">$ git add A <span class="comment">// 是上面两个功能的合集（git add --all的缩写）</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h3 id="常用操作流程"><a href="#常用操作流程" class="headerlink" title="常用操作流程"></a>常用操作流程</h3><ul>
-<li><p>初始化</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Example-a</span></span><br><span class="line">$ git init</span><br><span class="line"><span class="comment">// 本地仓库只关联一个远程仓库时</span></span><br><span class="line">$ git remote add origin git@server.com user_name/repo_name.git</span><br><span class="line"><span class="comment">// 本地仓库关联多个远程仓库时，origin不可用</span></span><br><span class="line">$ git remote add server_1 git@server_1.com user_name/repo_name.git</span><br><span class="line">$ git remote add server_2 git@server_2.com user_name/repo.name.git</span><br><span class="line"></span><br><span class="line"><span class="comment">// Example-b</span></span><br><span class="line">$ git clone 远程仓库地址</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>添加至本地仓库当前分支的暂停区</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 添加单个文件的新增、修改</span></span><br><span class="line">$ git add file_name</span><br><span class="line"><span class="comment">// 添加所有文件的新增、修改</span></span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m <span class="string">"描述"</span> <span class="comment">// 将暂停区所有内容提交到当前分支</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>撤销修改  </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Example-a 文件在工作区被修改，还未add到暂停区</span></span><br><span class="line">$ git checkout -- file_name <span class="comment">// 回到上一次commit后保留在和本地仓库一样的状态或者回到上一次add后的保留在暂停区的状态</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Example-b 文件修改后，add到了暂停区</span></span><br><span class="line">$ git reset HEAD file_name <span class="comment">// 将暂停区的修改撤销(unstage)，重新放回工作区</span></span><br><span class="line">$ git checkout -- file_name <span class="comment">// 继续丢弃工作区的修改</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>版本回退&nbsp;&nbsp;<span style="color:red;">注意：reset可以指向历史记录的merge，revert不能指向merge</span></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 首先查看需要回退的commit_id或根据tag_name查找commit_id</span></span><br><span class="line">$ git log </span><br><span class="line"><span class="comment">// or</span></span><br><span class="line">$ git reflog</span><br><span class="line"><span class="comment">// or</span></span><br><span class="line">$ git tag</span><br><span class="line">$ git show tag_name</span><br><span class="line"><span class="comment">// 然后拿到需要回退的commit_id</span></span><br><span class="line">$ git reset --hard commit_id <span class="comment">// HEAD指针回退到指定的commit状态，历史记录中不出现放弃的提交记录</span></span><br><span class="line"><span class="comment">// or</span></span><br><span class="line">$ git revert commit_id <span class="comment">// 版本回退，放弃指定commit状态，生成一次新的提交，需要填写注释，以前的记录都在</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除文件</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ rm file_name <span class="comment">// 从当前分支的工作区将文件删除</span></span><br><span class="line">$ git rm file_name <span class="comment">// 从本地版本库的当前分支将文件删除</span></span><br><span class="line"><span class="comment">// 工作区的文件误删时</span></span><br><span class="line">$ git checkout -- file_name <span class="comment">// 用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="参考来源："><a href="#参考来源：" class="headerlink" title="参考来源："></a>参考来源：</h3><blockquote>- 廖雪峰老师的<a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="noopener">Git教程</a><br>- youzheJ的<a href="http://blog.youzhej.cn/2017/10/22/git%20%E5%91%BD%E4%BB%A4%E6%B1%87%E6%80%BB/" target="_blank" rel="noopener">git命令汇总</a></blockquote>
-
+        
+          <a class="article-more-a" href="/2017/12/05/git-commend/#more">more >></a>
+        
       
 
       
@@ -537,11 +577,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
         		</li>
       		
 		</ul>
@@ -611,45 +651,12 @@
         <ul>
 <li><h3 id="Git是什么？"><a href="#Git是什么？" class="headerlink" title="Git是什么？"></a>Git是什么？</h3>目前世界上最先进的分布式版本控制系统</li>
 <li><h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><ol>
-<li><p>Linux系统</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 查看是否已安装git</span></span><br><span class="line">$ git</span><br><span class="line">The program <span class="string">'git'</span> is currently not installed. You can install it by typing:  </span><br><span class="line">sudo apt-get install git</span><br><span class="line"><span class="comment">// 未安装显示以上提示，若系统是新版本Debian或Ubuntu Linux</span></span><br><span class="line">$ sudo apt-get install git</span><br><span class="line"><span class="comment">// 老版本的Debian或Ubuntu Linux</span></span><br><span class="line">$ sudo apt-get install git-core</span><br><span class="line"><span class="comment">// 其他Linux版本可以直接通过源码安装。先从Git官网下载源码，然后解压，依次输入：./config，make，sudo make install这几个命令安装就好了</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Mac OS X系统  </p>
-<p>直接从AppStore安装Xcode，Xcode集成了Git，不过默认没有安装，你需要运行Xcode，选择菜单“Xcode”-&gt;“Preferences”，在弹出窗口中找到“Downloads”，选择“Command Line Tools”，点“Install”就可以完成安装了。  </p>
-</li>
-<li><p>Windows系统  </p>
-<p>Windows下要使用很多Linux/Unix的工具时，需要Cygwin这样的模拟环境，Git也一样。Cygwin的安装和配置都比较复杂，不建议折腾。不过，有高人已经把模拟环境和Git都打包好了，名叫msysgit，只需要下载一个单独的exe安装程序，其他什么也不用装，绝对好用。msysgit是Windows版的Git，从<a href="https://git-for-windows.github.io" target="_blank" rel="noopener">https://git-for-windows.github.io下载</a>（网速慢请移步国内镜像），然后按默认选项安装即可。安装完成后，在开始菜单里找到“Git”-&gt;“Git Bash”，蹦出一个类似命令行窗口的东西，就说明Git安装成功！<br>安装完成后,需要进一步设置，命令行输入</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"your name"</span></span><br><span class="line">$ git config --global user.email <span class="string">"email@example.com"</span></span><br></pre></td></tr></table></figure>
-<p>注意git config命令的–global参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和Email地址。</p>
+<li>Linux系统<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 查看是否已安装git</span></span><br><span class="line">$ git</span><br><span class="line">The program <span class="string">'git'</span> is currently not installed. You can install it by typing:  </span><br><span class="line">sudo apt-get install git</span><br><span class="line"><span class="comment">// 未安装显示以上提示，若系统是新版本Debian或Ubuntu Linux</span></span><br><span class="line">$ sudo apt-get install git</span><br><span class="line"><span class="comment">// 老版本的Debian或Ubuntu Linux</span></span><br><span class="line">$ sudo apt-get install git-core</span><br><span class="line"><span class="comment">// 其他Linux版本可以直接通过源码安装。先从Git官网下载源码，然后解压，依次输入：./config，make，sudo make install这几个命令安装就好了</span></span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-</li>
-<li><h3 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h3><ol>
-<li>什么是版本库？<br>版本库又名仓库，英文名repository，你可以简单理解成一个目录，这个目录里面的所有文件都可以被Git管理起来，每个文件的修改、删除，Git都能跟踪，以便任何时刻都可以追踪历史，或者在将来某个时刻可以“还原”。</li>
-</ol>
-</li>
-<li><h3 id="如何创建版本库？"><a href="#如何创建版本库？" class="headerlink" title="如何创建版本库？"></a>如何创建版本库？</h3><ol>
-<li><p>选择合适的地方，创建一个空目录  </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir gitRepo</span><br><span class="line">$ cd gitRepo</span><br><span class="line">$ pwd</span><br></pre></td></tr></table></figure>
-<p>pwd命令用来显示当前目录，<span style="color:red;">如果你使用Windows系统，为了避免遇到各种莫名其妙的问题，请确保目录名（包括父目录）不包含中文。</span>  </p>
-</li>
-<li><p>通过<code>git init</code>命令，将这个目录变成Git可以管理的仓库  </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure>
-<p>瞬间Git就把仓库建好了，而且告诉你是一个空的仓库（empty Git repository），细心的读者可以发现当前目录下多了一个.git的目录，这个目录是Git来跟踪管理版本库的，没事千万不要手动修改这个目录里面的文件，不然改乱了，就把Git仓库给破坏了。如果你没有看到.git目录，那是因为这个目录默认是隐藏的，用ls -ah命令就可以看见。  </p>
-</li>
-<li><p>将文件添加到版本库<br>编写一个readme.md文件，内容如下：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Git is a version control system</span><br><span class="line">Git is a free software</span><br></pre></td></tr></table></figure>
-<p>放至gitRepo目录下，第一步，用<code>git add</code>命令告诉Git，将文件添加至仓库：  </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add readme.md</span><br></pre></td></tr></table></figure>
-<p>执行上面的命令没有任何显示，这就对了，Unix的哲学是“没有消息就是好消息”，说明添加成功<br>第二步，用<code>git commit</code> 命令告诉Git，将文件提交至仓库：  </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m <span class="string">'wrote a readme.md file'</span></span><br></pre></td></tr></table></figure>
-<p><code>git commit</code>命令，-m后面是本次提交的说明<br>为什么Git添加文件需要add，commit一共两步呢？因为commit可以一次提交很多文件，所以你可以多次add不同的文件，比如：  </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git add readyou.md</span><br><span class="line">$ git add readhe.md</span><br><span class="line">$ git commit -m <span class="string">'add some md files'</span></span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-</li>
-</ul>
-<h3 id="参考来源："><a href="#参考来源：" class="headerlink" title="参考来源："></a>参考来源：</h3><blockquote>- 廖雪峰老师的<a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="noopener">Git教程</a></blockquote>
+        
+          <a class="article-more-a" href="/2017/12/04/git-install/#more">more >></a>
+        
       
 
       
@@ -662,11 +669,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
         		</li>
       		
 		</ul>
@@ -908,14 +915,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">笔记</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">jsonp</a>
               </li>
              
@@ -924,11 +923,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vue</a>
+                <a href="javascript:void(0)" class="js-tag color3">笔记</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">webpack</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">nodeJs</a>
               </li>
             
             <div class="clearfix"></div>

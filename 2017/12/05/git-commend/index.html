@@ -9,13 +9,13 @@
   <title>Git教程学习（2）-常用命令 | 23forever的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="基础命令 git init 初始化当前目录为Git可以管理的版本库   touch .gitignore 新建.gitignore文件（.gitignore文件用于忽略文件的提交Github准备的各种配置文件） git rm &amp;lt;filename&amp;gt; 从版本库删除文件     git statu">
-<meta name="keywords" content="git,笔记">
+<meta name="keywords" content="笔记,git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git教程学习（2）-常用命令">
 <meta property="og:url" content="https://23forever.cn/2017/12/05/git-commend/index.html">
 <meta property="og:site_name" content="23forever的个人博客">
 <meta property="og:description" content="基础命令 git init 初始化当前目录为Git可以管理的版本库   touch .gitignore 新建.gitignore文件（.gitignore文件用于忽略文件的提交Github准备的各种配置文件） git rm &amp;lt;filename&amp;gt; 从版本库删除文件     git status 查看版本库的当前状态 git diff 查看与上一次commit相比修改的内容，添加&amp;lt;">
-<meta property="og:updated_time" content="2017-12-06T17:45:03.318Z">
+<meta property="og:updated_time" content="2018-07-20T08:39:22.699Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git教程学习（2）-常用命令">
 <meta name="twitter:description" content="基础命令 git init 初始化当前目录为Git可以管理的版本库   touch .gitignore 新建.gitignore文件（.gitignore文件用于忽略文件的提交Github准备的各种配置文件） git rm &amp;lt;filename&amp;gt; 从版本库删除文件     git status 查看版本库的当前状态 git diff 查看与上一次commit相比修改的内容，添加&amp;lt;">
@@ -184,9 +184,11 @@
 <li><code>git diff</code> 查看与上一次commit相比修改的内容，添加<code>&lt;filename&gt;</code>可指定文件  </li>
 <li><code>git reflog</code> 显示整个本地仓储的命令, 包括所有branch的命令, 甚至包括已经撤销的commit, 只要HEAD发生了变化, 就会在reflog里面看得到  </li>
 <li><code>git reset –hard commit_id</code> 版本回退至指定commit，HEAD指向当前版本，HEAD^指向上一个版本<h3 id="按类型分类"><a href="#按类型分类" class="headerlink" title="按类型分类"></a>按类型分类</h3></li>
-<li><p><code>git add</code>  </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git add file_name <span class="comment">//  将某个文件添加到暂停区，多个文件时空格隔开</span></span><br><span class="line">$ git add -u <span class="comment">// 仅监控已经被add的文件（即tracked file），他会将被修改的文件提交到暂存区。add -u 不会提交新文件（untracked file）。（git add --update的缩写）</span></span><br><span class="line">$ git add . <span class="comment">// 监控工作区的状态树，使用它会把工作时的所有变化提交到暂存区，包括文件内容修改(modified)以及新文件(new)，但不包括被删除的文件。</span></span><br><span class="line">$ git add A <span class="comment">// 是上面两个功能的合集（git add --all的缩写）</span></span><br></pre></td></tr></table></figure>
+<li><code>git add</code>  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git add file_name <span class="comment">//  将某个文件添加到暂停区，多个文件时空格隔开</span></span><br><span class="line">$ git add -u <span class="comment">// 仅监控已经被add的文件（即tracked file），他会将被修改的文件提交到暂存区。add -u 不会提交新文件（untracked file）。（git add --update的缩写）</span></span><br><span class="line">$ git add . <span class="comment">// 监控工作区的状态树，使用它会把工作时的所有变化提交到暂存区，包括文件内容修改(modified)以及新文件(new)，但不包括被删除的文件。</span></span><br><span class="line">$ git add A <span class="comment">// 是上面两个功能的合集（git add --all的缩写）</span></span><br></pre></td></tr></table></figure>
 </li>
+</ul>
+<a id="more"></a>
+<ul>
 <li><p><code>git branch</code> 该指令用来操作分支</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git branch <span class="comment">// 查看本地所有分支，当前分支前面标有*号</span></span><br><span class="line">$ git branch -a <span class="comment">// 查看本地和远程的所有分支</span></span><br><span class="line">$ git branch branch_name <span class="comment">// 创建本地分支</span></span><br><span class="line">$ git branch -d branch_name <span class="comment">// 删除本地分支</span></span><br></pre></td></tr></table></figure>
 </li>
@@ -249,11 +251,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
         		</li>
       		
 		</ul>
@@ -485,14 +487,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">笔记</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">jsonp</a>
               </li>
              
@@ -501,11 +495,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vue</a>
+                <a href="javascript:void(0)" class="js-tag color3">笔记</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">webpack</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">nodeJs</a>
               </li>
             
             <div class="clearfix"></div>

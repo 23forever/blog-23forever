@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://23forever.cn">
-  <title>Tag: 感想 | 23forever的个人博客</title>
+  <title>Node.js学习(1)-基础知识 | 23forever的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="23forever的个人博客">
-<meta property="og:url" content="https://23forever.cn/tags/感想/index.html">
+  <meta name="description" content="Node.js是什么？官网给出的解释是：Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。Node.js 的包管理器 npm，是全球最大的开源库生态系统。 Node.js中的模块 assert- 断言，a">
+<meta name="keywords" content="笔记,nodeJs">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Node.js学习(1)-基础知识">
+<meta property="og:url" content="https://23forever.cn/2018/07/20/nodeJs-study-basic/index.html">
 <meta property="og:site_name" content="23forever的个人博客">
+<meta property="og:description" content="Node.js是什么？官网给出的解释是：Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。Node.js 的包管理器 npm，是全球最大的开源库生态系统。 Node.js中的模块 assert- 断言，assert模块提供了断言测试的函数，用于测试不变式   Buffer- 缓存，B">
+<meta property="og:updated_time" content="2018-07-25T05:53:12.797Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="23forever的个人博客">
+<meta name="twitter:title" content="Node.js学习(1)-基础知识">
+<meta name="twitter:description" content="Node.js是什么？官网给出的解释是：Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。Node.js 的包管理器 npm，是全球最大的开源库生态系统。 Node.js中的模块 assert- 断言，assert模块提供了断言测试的函数，用于测试不变式   Buffer- 缓存，B">
   
     <link rel="alternative" href="/atom.xml" title="23forever的个人博客" type="application/atom+xml">
   
@@ -151,60 +156,250 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-nodeJs-study-basic" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/09/2018-midyearWorkFeelings/" class="archive-article-date">
-  	<time datetime="2018-07-09T15:25:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-09</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/09/2018-midyearWorkFeelings/">2018半年度工作感想</a>
+    <h1 class="article-title" itemprop="name">
+      Node.js学习(1)-基础知识
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/07/20/nodeJs-study-basic/" class="archive-article-date">
+  	<time datetime="2018-07-20T08:43:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-20</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Node.js是什么？官网给出的解释是：<br>Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。Node.js 的包管理器 npm，是全球最大的开源库生态系统。</p>
+<h2 id="Node-js中的模块"><a href="#Node-js中的模块" class="headerlink" title="Node.js中的模块"></a>Node.js中的模块</h2><ul>
+<li><code>assert</code>- 断言，assert模块提供了断言测试的函数，用于测试不变式  </li>
+<li><code>Buffer</code>- 缓存，Buffer类在Node.js中是一个全局变量，用于实现二进制数据的存储和转换  </li>
+<li><code>child_process</code>- 子进程，提供衍生子进程的功能  </li>
+<li><code>cluster</code>- 集群，用于实现多进程  </li>
+<li><code>console</code>- 控制台，简单的调试控制台，类似于Web浏览器提供的JavaScript控制台  </li>
+<li><code>crypto</code>- 加密，提供加密功能，包含对 OpenSSL 的哈希、HMAC、加密、解密、签名、以及验证功能的一整套封装  </li>
+<li><code>dgram</code>- 数据报，提供UDP数据包scoket的实现  </li>
+<li><code>dns</code>- 域名服务器，用于实现与dns相关的处理  </li>
+<li><code>Error</code>- 错误，提供Node.js引起的javaScript错误和系统错误  </li>
+<li><code>events</code>- 事件，用于为事件处理提供一个基础类  </li>
+<li><code>fs</code>- 文件系统，用于操作文件和文件系统  </li>
+<li><code>http</code>- HTTP，用于实现HTTP服务器端及客户端  </li>
+<li><code>https</code>- HTTPS，用于实现HTTPS服务器端及客户端  </li>
+<li><code>net</code>- 网络，用于创建TCP服务器与客户端  </li>
+<li><code>os</code>- 操作系统，提供了一些操作系统相关的实用方法  </li>
+<li><code>path</code>- 路径，提供了一些用于处理文件和目录路径的工具函数  </li>
+<li><code>querystring</code>- 查询字符串，用于处理HTTP请求中使用的查询字符串  </li>
+<li><code>readline</code>- 逐行读取，用于读取一行标准输入流  </li>
+<li><code>repl</code>- 交互式解释器，用于实现REPL（Read-Eval-Print-Loop）交互式运行环境  </li>
+<li><code>stream</code>- 流，用于构建实现了流接口的对象  </li>
+<li><code>string_decoder</code>- 字符串解码器，用于从二进制数据到字符串数据之间的转换  </li>
+</ul>
+<a id="more"></a>
+<ul>
+<li><code>tls</code>- 安全传输层，用于使用OpenSSL来实现TLS/SSL通信处理  </li>
+<li><code>tty</code>- 终端，用于获取来自于TTY终端的信息  </li>
+<li><code>url</code>- URL，用于URL处理与解析  </li>
+<li><code>util</code>- 实用工具，主要用于支持Node.js内部API的需求。也可用于应用程序与模块的开发者  </li>
+<li><code>V8</code>- V8引擎，v8 模块暴露了特定于V8版本内置到 Node.js 二进制文件中的API  </li>
+<li><code>vm</code>- 虚拟机，vm 模块提供了一系列 API 用于在 V8 虚拟机环境中编译和运行代码  </li>
+<li><code>Zlib</code>- zlib，zlib模块提供Gzip和Deflate/inflate实现的压缩功能和解压处理  <h2 id="Node-js基础知识"><a href="#Node-js基础知识" class="headerlink" title="Node.js基础知识"></a>Node.js基础知识</h2></li>
+<li>Node.js中的控制台  </li>
+<li>Node.js中的全局作用域与和全局函数  </li>
+<li>事件处理机制及时间环机制  </li>
+</ul>
+<h3 id="Node-js中的控制台"><a href="#Node-js中的控制台" class="headerlink" title="Node.js中的控制台"></a>Node.js中的控制台</h3><ul>
+<li><p><code>console.log([data][,…args])</code>方法<br><code>console.log</code>方法用于标准输出流的输出  </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> count = <span class="number">5</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'count: %d'</span>, count);</span><br><span class="line"><span class="comment">// 打印：count: 5</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>console.table(tabularData[,properties])</code>方法<br><code>console.log</code>方法用于输出表格  </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.table([&#123; <span class="attr">a</span>: <span class="number">1</span>, <span class="attr">b</span>: <span class="string">'Y'</span> &#125;, &#123; <span class="attr">a</span>: <span class="string">'Z'</span>, <span class="attr">b</span>: <span class="number">2</span> &#125;]);</span><br><span class="line"><span class="comment">// 打印：</span></span><br><span class="line"><span class="comment">//  ┌─────────┬─────┬─────┐</span></span><br><span class="line"><span class="comment">//  │ (index) │  a  │  b  │</span></span><br><span class="line"><span class="comment">//  ├─────────┼─────┼─────┤</span></span><br><span class="line"><span class="comment">//  │    0    │  1  │ 'Y' │</span></span><br><span class="line"><span class="comment">//  │    1    │ 'Z' │  2  │</span></span><br><span class="line"><span class="comment">//  └─────────┴─────┴─────┘</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>console.time([label])</code>和<code>console.timeEnd([label])</code>方法<br><code>console.time</code>启动一个定时器，用以计算一个持续时间，打印结果<br><code>console.timeEnd</code>停止之前通过调用<code>console.time</code>启动的定时器，并打印结果  </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.time(<span class="string">'timeA'</span>)</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">100000</span>; i++) &#123;&#125;</span><br><span class="line"><span class="built_in">console</span>.timeEnd(<span class="string">'timeA'</span>)</span><br><span class="line"><span class="comment">// 打印 timeA: 2.053ms</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>console.trace([message][,…args])</code>方法<br><code>console.trace</code>方法用于将当前位置处的栈信息作为标准信息进行输出</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.trace(<span class="string">'Show me'</span>)</span><br><span class="line"><span class="comment">// 打印: (堆栈跟踪会根据被调用的跟踪的位置而变化)</span></span><br><span class="line"><span class="comment">// Trace: show me</span></span><br><span class="line"><span class="comment">//     at repl:1:9</span></span><br><span class="line"><span class="comment">//     at Script.runInThisContext (vm.js:91:20)</span></span><br><span class="line"><span class="comment">//     at REPLServer.defaultEval (repl.js:317:29)</span></span><br><span class="line"><span class="comment">//     at bound (domain.js:396:14)</span></span><br><span class="line"><span class="comment">//     at REPLServer.runBound [as eval] (domain.js:409:12)</span></span><br><span class="line"><span class="comment">//     at REPLServer.onLine (repl.js:615:10)</span></span><br><span class="line"><span class="comment">//     at REPLServer.emit (events.js:187:15)</span></span><br><span class="line"><span class="comment">//     at REPLServer.EventEmitter.emit (domain.js:442:20)</span></span><br><span class="line"><span class="comment">//     at REPLServer.Interface._onLine (readline.js:285:10)</span></span><br><span class="line"><span class="comment">//     at REPLServer.Interface._line (readline.js:633:8)</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="Node-js中的全局作用域及全局函数"><a href="#Node-js中的全局作用域及全局函数" class="headerlink" title="Node.js中的全局作用域及全局函数"></a>Node.js中的全局作用域及全局函数</h3><h5 id="全局作用域"><a href="#全局作用域" class="headerlink" title="全局作用域"></a>全局作用域</h5><p>Node.js中，全局作用域为global对象，代表Node.js中的全局命名空间，任何全局变量、函数或类都是该对象的一个属性值<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span></span><br><span class="line"><span class="comment">// 打印</span></span><br><span class="line"><span class="comment">// Object [global] &#123;</span></span><br><span class="line"><span class="comment">//   DTRACE_NET_SERVER_CONNECTION: [Function],</span></span><br><span class="line"><span class="comment">//   DTRACE_NET_STREAM_END: [Function],</span></span><br><span class="line"><span class="comment">//   DTRACE_HTTP_SERVER_REQUEST: [Function],</span></span><br><span class="line"><span class="comment">//   DTRACE_HTTP_SERVER_RESPONSE: [Function],</span></span><br><span class="line"><span class="comment">//   DTRACE_HTTP_CLIENT_REQUEST: [Function],</span></span><br><span class="line"><span class="comment">//   DTRACE_HTTP_CLIENT_RESPONSE: [Function],</span></span><br><span class="line"><span class="comment">//   COUNTER_NET_SERVER_CONNECTION: [Function],</span></span><br><span class="line"><span class="comment">//   COUNTER_NET_SERVER_CONNECTION_CLOSE: [Function],</span></span><br><span class="line"><span class="comment">//   COUNTER_HTTP_SERVER_REQUEST: [Function],</span></span><br><span class="line"><span class="comment">//   COUNTER_HTTP_SERVER_RESPONSE: [Function],</span></span><br><span class="line"><span class="comment">//   COUNTER_HTTP_CLIENT_REQUEST: [Function],</span></span><br><span class="line"><span class="comment">//   COUNTER_HTTP_CLIENT_RESPONSE: [Function],</span></span><br><span class="line"><span class="comment">//   global: [Circular],</span></span><br><span class="line"><span class="comment">//   process:</span></span><br><span class="line"><span class="comment">//    process &#123;</span></span><br><span class="line"><span class="comment">//      title: ' ',</span></span><br><span class="line"><span class="comment">//      version: 'v10.1.0',</span></span><br><span class="line"><span class="comment">//      versions:</span></span><br></pre></td></tr></table></figure></p>
+<h5 id="全局函数"><a href="#全局函数" class="headerlink" title="全局函数"></a>全局函数</h5><ul>
+<li><code>Buffer</code>类，用于处理二进制数据  </li>
+<li><code>__dirname</code>，非全局变量，作用域只在模块内，表示当前模块文件夹名称，等同于<code>__filename</code>的<code>path.dirname()</code>  </li>
+<li><code>__filenmae</code>，非全局变量，作用域只在模块内，表示当前模块的文件名称—解析后的绝对路径  </li>
+<li><code>clearImmediate(immediateObject)</code>，取消一个由<code>setImmediate()</code>创建的<code>Immediate</code>对象  </li>
+<li><code>clearInterval(intervalObject)</code>，取消一个由<code>setInterval()</code> 创建的 <code>Timeout</code> 对象  </li>
+<li><code>clearTimeout(timeoutObject)</code>，取消一个<code>setTimeout()</code>创建的<code>Timeout</code>对象  </li>
+<li><code>console</code>类，用于打印  </li>
+<li><code>exports</code>，非全局变量，作用域只在模块内，这是一个对于 <code>module.exports</code> 的更简短的引用形式  </li>
+<li><code>module</code>，非全局变量，是每个模块本地的，<code>module</code>的自由变量是一个指向表示当前模块的对象的引用  </li>
+<li><code>process</code>，提供当前Node.js进程的相关信息，以及控制当前 Node.js 进程  </li>
+<li><code>require()</code>，非全局变量，引入模块  </li>
+<li><code>setImmediate(callback[,…args])</code>，预定立即执行的 callback，它是在 I/O 事件的回调之后被触发。 返回一个用于 <code>clearImmediate()</code> 的 <code>Immediate</code>  </li>
+<li><code>setInterval(callback, delay[, …args])</code>，预定每隔 <code>delay</code> 毫秒重复执行的 <code>callback</code> 返回一个用于 <code>clearInterval()</code> 的 <code>Timeout</code>  </li>
+<li><code>setTimeout(callback, delay[, …args])</code>，预定在 <code>delay</code> 毫秒之后执行的单次 <code>callback</code>。 返回一个用于 <code>clearTimeout()</code> 的 <code>Timeout</code>  </li>
+<li><code>URL</code>类，浏览器兼容的<code>URL</code>类，根据 WHATWG URL 标准实现。[解析URL的示例][]可以在标准本身里边找到  </li>
+<li><code>URLSearchParams</code>类，<code>URLSearchParams</code>API接口提供对<code>URL</code>query部分的读写权限  </li>
+</ul>
+<hr>
+<h3 id="Node-js的事件处理机制及事件环机制"><a href="#Node-js的事件处理机制及事件环机制" class="headerlink" title="Node.js的事件处理机制及事件环机制"></a>Node.js的事件处理机制及事件环机制</h3><p>大多数 Node.js 核心 API 都采用惯用的异步事件驱动架构，其中某些类型的对象（触发器）会周期性地触发命名事件来调用函数对象（监听器）。<br>例如，<code>net.Server</code>对象会在每次有新的连接时触发事件；<code>fs.ReadStream</code>会在文件被打开时触发事件；流对象 会在数据可读时触发事件。<br>所有能触发事件的对象都是<code>EventEmitter</code>类的实例。这些对象开放了一个<code>eventEmitter.on()</code>函数，允许将一个或多个函数绑定到会被对象触发的命名事件上。事件名称通常是驼峰式的字符串，但也可以使用任何有效的JavaScript属性名。<br>当<code>EventEmitter</code>对象触发一个事件时，所有绑定在该事件上的函数都被同步地调用。监听器的返回值会被丢弃。</p>
+<h5 id="EventEmitter类方法"><a href="#EventEmitter类方法" class="headerlink" title="EventEmitter类方法"></a>EventEmitter类方法</h5><ul>
+<li><code>emitter.addListener(eventName, listener)</code>，对指定事件绑定事件处理函数，<code>emitter.on(eventName, listener)</code>的别名  </li>
+<li><code>emitter.on(eventName, listener)</code>，添加<code>listener</code>函数到名为<code>eventName</code>的事件的监听器数组的末尾。不会检查<code>listener</code>是否已被添加。多次调用并传入相同的<code>eventName</code>和<code>listener</code>会导致<code>listener</code>被添加与调用多次  </li>
+<li><code>emitter.once(eventName, listener)</code>，添加一个单次<code>listener</code>函数到名为<code>eventName</code>的事件。下次触发<code>eventName</code>时，监听器会被移除，然后调用  </li>
+<li><code>emitter.removeListener(eventName, listener)</code>，从名为 <code>eventName</code> 的事件的监听器数组中移除指定的 <code>listener</code>。<code>removeListener</code>最多只会从监听器数组里移除一个监听器实例。如果任何单一的监听器被多次添加到指定<code>eventName</code>的监听器数组中，则必须多次调用<code>removeListener</code>才能移除每个实例。  </li>
+<li><code>emitter.removeAllListeners([eventName])</code>，移除全部或指定<code>eventName</code>的监听器  </li>
+<li><code>emitter.emit(eventName[,…args])</code>，按监听器的注册顺序，同步地调用每个注册名为<code>eventName</code>事件的监听器，并传入提供的参数  <h5 id="事件环机制"><a href="#事件环机制" class="headerlink" title="事件环机制"></a>事件环机制</h5>在Node.js中，采用非阻塞I/O机制，这意味着要求所有应用程序所进行的处理，如HTTP请求、数据库查询、文件的输入/输出等，都不会在处理结束之前阻碍其他处理的进行，也就是说，这些处理都是独立进行的，当处理结束时，会触发一个回调事件，也就是说，在Node.js中，我们所要编写的时各种I/O事件的回调函数的处理。在回调函数的执行过程中，他将转而处理新的事件，在该事件处理完毕之后，转而继续处理原回调函数。这种环状处理机制，在Node.js中称为事件环机制。</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">感想</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">nodeJs</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记//" class="article-tag-list-link color3">笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
 
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://23forever.cn/2018/07/20/nodeJs-study-basic/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2018/07/09/2018-midyearWorkFeelings/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">2018半年度工作感想</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+  <div id="SOHUCS" sid="nodeJs-study-basic" ></div> 
+<script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window.changyan.api.config({
+        appid: "cytHjGqRG",
+        conf: "a5a5e318792859e2c24d7a5a4ece5336"
+    });
+</script>
+</script>
+  
+
+  
+
+  
 
 
           </div>
@@ -227,9 +422,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
